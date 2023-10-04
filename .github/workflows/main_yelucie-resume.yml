@@ -53,4 +53,4 @@ jobs:
           app-name: 'yelucie-resume'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8E22F2421DD841DC974C4648BE309688 }}
-          package: .
+          package: release.zip

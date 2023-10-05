@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+}
+
+nav {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    align-items: center;
+    margin: 1vh;
+}
+
+a {
+    text-decoration: none;
+    color: #2A2E2C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    width: 80%;
+    font-family: 'Pecita';
+    font-size: 30px;
+}
+
+.home a:hover {
+    text-decoration: none;
+}
+
+.menu {
+    width: 50vh;
+    font-family: 'Kodchasan';
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu img {
+    vertical-align: bottom;
+    margin-right: 8px;
+    max-width: 25px;
+}
+
+@media screen and (max-width: 780px) {
+    .menu {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .welcome {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 13vh 6vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 6vh;
+        color: #2B3034;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 6vh;
+        margin-bottom: 12vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 3vh;
+        color: #2B3034;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 990px) {
+    .welcome {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 12vh 6vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 7vh;
+        color: #2B3034;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 6vh;
+        margin-bottom: 12vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 4vh;
+        color: #2B3034;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .welcome {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 12vh 12vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 7vh;
+        color: #2B3034;
+    }
+    
+    .description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 12vh;
+        margin-bottom: 12vh;
+        font-family: 'Mochiy Pop P One';
+        font-size: 4vh;
+        color: #2B3034;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    h1 {
+        margin-left: 10%;
+        margin-top: 30px;
+        font-family: 'Mochiy Pop P One';
+        font-size: 5vh;
+        color: #2B3034;
+        font-weight: normal;
+    }
+
+    .content {
+        display: block;
+        font-size: 2.3vh;
+        font-family: 'Kodchasan';
+        font-weight: normal;
+        gap: 20px;
+        margin: 0;
+        text-align: justify;
+        align-items: end;
+    }
+
+    .about {
+        padding: 9px;
+    }
+    
+    .contact ul {
+        text-align: center;
+    }
+
+    .contact ul li {
+        list-style: none;
+        border-radius: 25px;
+        border-color: #2A2E2C;
+        width: 183px;
+        background-color: white;
+        margin: 0;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 845px) {
+    h1 {
+        margin-left: 10%;
+        margin-top: 30px;
+        font-family: 'Mochiy Pop P One';
+        font-size: 70px;
+        color: #2B3034;
+        font-weight: normal;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        font-family: 'Kodchasan';
+        font-size: 16px;
+        font-weight: normal;
+        gap: 20px;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 20px;
+        text-align: justify;
+        align-items: end;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
+
+.about {
+    border-radius: 25px;
+    border-color: #2A2E2C;
+    background-color: white;
+    margin: 3vh;
+}
+
+.about p {
+    margin: 0;
+    padding: 8px;
+}
+
+.skills {
+    padding: 20px;
+    display: flex;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills li {
+    border-radius: 25px;
+    border-color: #2A2E2C;
+    width: fit-content;
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+}
+
+.contact {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.contact ul li {
+    list-style: none;
+    border-radius: 25px;
+    border-color: #2A2E2C;
+    width: 183px;
+    background-color: white;
+    margin: 50px;
+    padding: 15px;
+}
+
+.contact ul li img {
+    max-width: 100%;
+}
